@@ -1,101 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-
-body {
-    font-family: "Josefin Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin:0px;
+    padding: 0px;
+}
+html{
+    /*me permite deslizar cuando hago click*/
+    scroll-behavior: smooth;
+}
+/*Menu*/
+.contenedor-header{
+    background:#1e2326;
+    position: relative;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 99;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
 }
-
-header h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size:36px;
+    color:#1CB698;
     text-decoration: none;
 }
-
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 5px;
-}
-
-#about, #contact {
-    text-align:left;
-}
-
-#hobbys h2 {
+.contenedor-header header ul{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    margin-bottom: 20px
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color:#fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration:none;
 }
 
-
-#project h2 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    margin-bottom: 20px
+.contenedor-header header nav ul li a:hover{
+    color:#1CB698;
 }
 
-
-
-.hobbys {
-    
-    background-color: #e4e4e4;
+.nav-responsive{
+    background-color: #1CB698;
+    color:#fff;
+    padding: 5px 10px;
     border-radius: 5px;
-    padding: 15px;
-    margin: 10px;
-    flex: 0 1 30%;
-    text-align: center;
+    cursor: pointer;
+    display: none;
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: white;
-}
-
-.caja-blanca{
+/*Seccion de inicio*/
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(fondo2.jpeg);
+    background-size: cover;
+    height: 100vh;
+    color:#fff;
     display: flex;
-    justify-content: center;
-}
-.img-01{
-    width: 150px;
-    height: 250px;
-    border-radius: 25px;
+    align-items: center;
 }
 
-.project{
-    background-color: #e4e4e4;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 10px;
-    flex: 0 1 30%;
+.inicio .contenido-banner{
+    padding:20px;
+    background-color:#1e2326 ;
+    max-width: 350px;
+    margin:auto;
     text-align: center;
+    border-radius: 40px;
 }
+
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid #1CB698;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius:100%;
+}
+
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: "Righteous";
+}
+
+.inicio .contenido-banner h2{
+ 
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.inicio .contenido-banner .redes a{
+    color:#fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin:40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.inicio .contenido-banner .redes a:hover{
+ background-color:#1CB698;   
+}
+
